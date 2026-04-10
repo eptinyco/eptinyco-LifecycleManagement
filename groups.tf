@@ -34,5 +34,6 @@ resource "azuread_group" "manual_groups" {
   mail_nickname    = each.value.nickname
   description      = each.value.description
   security_enabled = true
+  assignable_to_role = true
 }
 
