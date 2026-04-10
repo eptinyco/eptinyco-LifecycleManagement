@@ -37,6 +37,7 @@ resource "azuread_app_role_assignment" "user_app_assignments" {
   for_each = local.user_app_assignments
 
   app_role_id         = "00000000-0000-0000-0000-000000000000"
-  principal_object_id = azuread_user.users[each.value.upn].id
+  #principal_object_id = azuread_user.users[each.value.upn].id
+  principal_object_id = each.value.upn
   resource_object_id  = data.azuread_service_principal.apps[each.value.app_id].object_id
 }
