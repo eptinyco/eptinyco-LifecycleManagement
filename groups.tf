@@ -6,6 +6,7 @@ resource "azuread_group" "dept_groups" {
   mail_nickname    = "sg-dept-${lower(replace(each.key, " ", "-"))}"
   description      = "${each.key} department"
   security_enabled = true
+  assignable_to_role = true
 }
 
 # Membership: place each user in their department group
