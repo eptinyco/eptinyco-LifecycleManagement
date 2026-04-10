@@ -6,7 +6,7 @@ terraform {
     organization = "eptinyco"
 
     workspaces {
-      name = "eptinyco-entra"
+      name = "UserManagement"
     }
   }
   required_providers {
