@@ -50,4 +50,11 @@ locals {
     for upn, user in azuread_user.users :
     upn => regex("[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", user.id)
   }
+
+  # Normalize Group object IDs to bare UUIDs — the azuread provider can return
+  # full OData paths like /groups/<uuid> depending on the provider version
+  dept_group_object_ids = {
+    for dept, group in azuread_group.dept_groups :
+    dept => regex("[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", group.id)
+  }
 }
