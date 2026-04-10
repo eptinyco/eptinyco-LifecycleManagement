@@ -30,10 +30,9 @@ resource "azuread_group_member" "allCompany_membership" {
 resource "azuread_group" "manual_groups" {
   for_each = local.manual_groups
 
-  display_name     = each.value.name
-  mail_nickname    = each.value.nickname
-  description      = each.value.description
-  security_enabled = true
+  display_name       = each.value.name
+  mail_nickname      = each.value.nickname
+  description        = each.value.description
+  security_enabled   = true
   assignable_to_role = true
 }
-
