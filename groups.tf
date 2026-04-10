@@ -14,7 +14,7 @@ resource "azuread_group_member" "dept_memberships" {
 
   group_object_id  = azuread_group.dept_groups[each.value.department].id
   # member_object_id = azuread_user.users[each.key].id
-  member_object_id = azuread_user[each.value.upn].id
+  member_object_id = azuread_user.users[each.value.upn].id
 
 }
 
