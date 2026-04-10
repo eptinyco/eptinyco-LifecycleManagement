@@ -4,35 +4,43 @@ data "azuread_domains" "aad_domains" {
 }
 
 locals {
+  # Get Azure Domain Name
   domain = data.azuread_domains.aad_domains.domains.*.domain_name
-  users = csvdecode(file("users.csv"))
-}
 
-output "domain" {
-  value = local.domain
-}
+  # Parse CSVs
+  users_raw       = csvdecode(file("users.csv"))
+  groups_raw      = csvdecode(file("groups.csv"))
+  apps_raw        = csvdecode(file("apps.csv"))
+  dept_apps_raw   = csvdecode(file("dept_app_assignments.csv"))
 
-output "username" {
-  value = [ for user in local.users : "${user.firstName} ${user.lastName}" ]
-}
+  # Keyed maps for resource lookups
+  users_by_upn    = { for u in local.users_raw : u.upn => u }
+  apps_by_id      = { for a in local.apps_raw : a.app_id => a }
 
-resource "azuread_user" "users" {
-  for_each = {for user in local.users: user.firstName => user }
+  # Derive unique departments from users.csv — drives auto-group creation
+  departments     = distinct([for u in local.users_raw : u.department])
 
-  user_principal_name = format("%s%s%s@%s", 
-    lower(each.value.firstName),
-    ".",
-    lower(each.value.lastName),
-    "eptinyco.tech" )
+  # Manual groups keyed by name
+  manual_groups   = { for g in local.groups_raw : g.name => g }
 
-  password = "H3llo_eptinyco_temp*"
+  # Dept app assignment map keyed as "dept|app_id"
+  dept_app_map = {
+    for row in local.dept_apps_raw :
+    "${row.department}|${row.app_id}" => row
+  }
 
-  display_name = "${each.value.firstName} ${each.value.lastName}"
-
-  force_password_change = true
-
-  department = each.value.team
-
-  job_title = each.value.jobTitle
-
+  # Expand to per-user app assignments via department
+  # Produces a flat map keyed as "upn|app_id"
+  user_app_assignments = {
+    for pair in flatten([
+      for u in local.users_raw : [
+        for da in local.dept_apps_raw : {
+          key    = "${u.upn}|${da.app_id}"
+          upn    = u.upn
+          app_id = da.app_id
+        }
+        if da.department == u.department
+      ]
+    ]) : pair.key => pair
+  }
 }

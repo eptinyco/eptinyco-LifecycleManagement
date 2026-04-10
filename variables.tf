@@ -1,3 +1,5 @@
+# Define the Terraform global variables to pull the API Client ID and Keys
+
 variable "ARM_CLIENT_ID" {
   type = string
   default = ""

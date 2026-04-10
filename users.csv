@@ -1,2 +1,92 @@
-firstName,lastName,team,jobTitle
-Bat,Man,ITOps,ITOps Manager
+upn,firstName,lastName,department,jobTitle,enabled
+paula.humphrey@eptinyco.tech,Paula,Humphrey,Backend,Head of Backend,TRUE
+emmy.dillon@eptinyco.tech,Emmy,Dillon,Backend,Staff Backend Developer,TRUE
+haris.marquez@eptinyco.tech,Haris,Marquez,Backend,Sr. Backend Developer,TRUE
+clark.pierce@eptinyco.tech,Clark,Pierce,Backend,Lead Backend Developer,TRUE
+cayden.lindsey@eptinyco.tech,Cayden,Lindsey,Backend,Lead Backend Developer,TRUE
+aine.cuevas@eptinyco.tech,Aine,Cuevas,Backend,Backend Developer,TRUE
+poppy.stein@eptinyco.tech,Poppy,Stein,Backend,Backend Developer,TRUE
+khadija.barron@eptinyco.tech,Khadija,Barron,Backend,Backend Developer,TRUE
+fatimah.harrison@eptinyco.tech,Fatimah,Harrison,Backend,Backend Developer,TRUE
+dan.york@eptinyco.tech,Dan,York,Backend,Backend Developer,TRUE
+zayd.watson@eptinyco.tech,Zayd,Watson,Design,Head of Design,TRUE
+virgil.hunt@eptinyco.tech,Virgil,Hunt,Design,Sr. Designer,TRUE
+zoya.cannon@eptinyco.tech,Zoya,Cannon,Design,Designer,TRUE
+maddie.benson@eptinyco.tech,Maddie,Benson,Design,Designer,TRUE
+bartosz.gamble@eptinyco.tech,Bartosz,Gamble,Design,Designer,TRUE
+nadine.leach@eptinyco.tech,Nadine,Leach,Design,Designer,TRUE
+sadia.west@eptinyco.tech,Sadia,West,Design,Designer,TRUE
+leyla.pratt@eptinyco.tech,Leyla,Pratt,Design,Designer,TRUE
+daniel.archer@eptinyco.tech,Daniel,Archer,Design,Designer,TRUE
+junaid.jarvis@eptinyco.tech,Junaid,Jarvis,Design,Designer,TRUE
+jeremy.savage@eptinyco.tech,Jeremy,Savage,Frontend,Head of Frontend,TRUE
+daisie.riley@eptinyco.tech,Daisie,Riley,Frontend,Staff Frontend Developer,TRUE
+ayesh.ballard@eptinyco.tech,Ayesh,Ballard,Frontend,Sr. Frontend Developer,TRUE
+mrytle.goodwife@eptinyco.tech,Mrytle,Goodwife,Frontend,Sr. Frontend Developer,TRUE
+mariam.higgins@eptinyco.tech,Mariam,Higgins,Frontend,Lead Frontend Developer,TRUE
+steffan.dale@eptinyco.tech,Steffan,Dale,Frontend,Lead Frontend Developer,TRUE
+elinor.reed@eptinyco.tech,Elinor,Reed,Frontend,Frontend Developer,TRUE
+lou.reed@eptinyco.tech,Lou,Reed,Frontend,Frontend Developer,TRUE
+thom.yorke@eptinyco.tech,Thom,Yorke,Frontend,Frontend Developer,TRUE
+aled.rodriguez@eptinyco.tech,Aled,Rodriguez,Frontend,Frontend Developer,TRUE
+christone.johnson@eptinyco.tech,Christone,Johnson,ITOps,IT Director,TRUE
+danny.carey@eptinyco.tech,Danny,Carey,ITOps,IT Manager,TRUE
+chester.burnett@eptinyco.tech,Chester,Burnett,ITOps,Lead IT Engineer,TRUE
+albert.king@eptinyco.tech,Albert,King,ITOps,IT Engineer,TRUE
+robert.johnson@eptinyco.tech,Robert,Johnson,ITOps,IT Engineer,TRUE
+hubert.sumlin@eptinyco.tech,Hubert,Sumlin,ITOps,IT Engineer,TRUE
+suman.alfaro@eptinyco.tech,Suman,Alfaro,ITOps,IT Engineer,TRUE
+alden.collnigwood@eptinyco.tech,Alden,Collnigwood,ITOps,IT Engineer,TRUE
+rachele.connor@eptinyco.tech,Rachele,Connor,ITOps,IT Engineer,TRUE
+marwa.morse@eptinyco.tech,Marwa,Morse,Legal,General Councel,TRUE
+esha.mays@eptinyco.tech,Esha,Mays,Legal,Head of Legal,TRUE
+muhammad.rocha@eptinyco.tech,Muhammad,Rocha,Legal,Lawyer,TRUE
+alia.warren@eptinyco.tech,Alia,Warren,Legal,Lawyer,TRUE
+chaya.nunez@eptinyco.tech,Chaya,Nunez,Legal,Lawyer,TRUE
+kyle.proctor@eptinyco.tech,Kyle,Proctor,Legal,Lawyer,TRUE
+musa.dyer@eptinyco.tech,Musa,Dyer,Legal,Lawyer,TRUE
+kiana.rowland@eptinyco.tech,Kiana,Rowland,Legal,Lawyer,TRUE
+edwin.solis@eptinyco.tech,Edwin,Solis,Legal,Lawyer,TRUE
+billie.lewis@eptinyco.tech,Billie,Lewis,Legal,Lawyer,TRUE
+eva.brewer@eptinyco.tech,Eva,Brewer,People Ops,Head of People Ops,TRUE
+gail.campos@eptinyco.tech,Gail,Campos,People Ops,Sr. HRBP,TRUE
+evangeline.schultz@eptinyco.tech,Evangeline,Schultz,People Ops,Sr. HRBP,TRUE
+caleb.dickson@eptinyco.tech,Caleb,Dickson,People Ops,Sr. HRBP,TRUE
+ffion.day@eptinyco.tech,Ffion,Day,People Ops,Head of Recruiting,TRUE
+frances.roy@eptinyco.tech,Frances,Roy,People Ops,Recruiter,TRUE
+steffan.berg@eptinyco.tech,Steffan,Berg,People Ops,Recruiter,TRUE
+will.tanner@eptinyco.tech,Will,Tanner,People Ops,People Manager,TRUE
+lawrence.bray@eptinyco.tech,Lawrence,Bray,People Ops,Benefits Manager,TRUE
+ronald.rojas@eptinyco.tech,Ronald,Rojas,People Ops,People Manager,TRUE
+mahnoor.terry@eptinyco.tech,Mahnoor,Terry,Product,Head of Product,TRUE
+frankie.lindsay@eptinyco.tech,Frankie,Lindsay,Product,Sr. Product Designer,TRUE
+elspeth.ayers@eptinyco.tech,Elspeth,Ayers,Product,Lead Product Designer,TRUE
+tariq.baker@eptinyco.tech,Tariq,Baker,Product,Product Designer,TRUE
+laura.harrington@eptinyco.tech,Laura,Harrington,Product,Product Designer,TRUE
+harriett.stafford@eptinyco.tech,Harriett,Stafford,Product,Product Designer,TRUE
+matthew.burnett@eptinyco.tech,Matthew,Burnett,Product,Product Designer,TRUE
+izaak.olsen@eptinyco.tech,Izaak,Olsen,Product,Product Designer,TRUE
+keira.romero@eptinyco.tech,Keira,Romero,Product,Product Designer,TRUE
+bertha.herbert@eptinyco.tech,Bertha,Herbert,Product,Product Designer,TRUE
+emmanuele.goldstein@eptinyco.tech,Emmanuele,Goldstein,Security,Security Officer,TRUE
+eben.etzebeth@eptinyco.tech,Eben,Etzebeth,Security,Sr. Security Engineer,TRUE
+maria.thacker@eptinyco.tech,Maria,Thacker,Security,Lead Security Engineer,TRUE
+xavier.pham@eptinyco.tech,Xavier,Pham,Security,Security Engineer,TRUE
+nora.flynn@eptinyco.tech,Nora,Flynn,Security,Security Engineer,TRUE
+adele.house@eptinyco.tech,Adele,House,Security,Security Engineer,TRUE
+rupert.ruiz@eptinyco.tech,Rupert,Ruiz,Security,Security Engineer,TRUE
+agnes.duncan@eptinyco.tech,Agnes,Duncan,Security,Security Engineer,TRUE
+ayden.fleming@eptinyco.tech,Ayden,Fleming,Security,App Security Engineer,TRUE
+deacon.hodge@eptinyco.tech,Deacon,Hodge,Security,App Security Engineer,TRUE
+louisa.dominguez@eptinyco.tech,Louisa,Dominguez,SRE,Head of SRE,TRUE
+lawson.baird@eptinyco.tech,Lawson,Baird,SRE,Staff SRE Engineer,TRUE
+catrin.jordan@eptinyco.tech,Catrin,Jordan,SRE,Sr. SRE Engineer,TRUE
+flora.pugh@eptinyco.tech,Flora,Pugh,SRE,Sr. SRE Engineer,TRUE
+judy.rollins@eptinyco.tech,Judy,Rollins,SRE,SRE Engineer,TRUE
+farhan.ashley@eptinyco.tech,Farhan,Ashley,SRE,SRE Engineer,TRUE
+lana.scott@eptinyco.tech,Lana,Scott,SRE,SRE Engineer,TRUE
+lia.dalton@eptinyco.tech,Lia,Dalton,SRE,SRE Engineer,TRUE
+samia.norman@eptinyco.tech,Samia,Norman,SRE,SRE Engineer,TRUE
+neil.montoya@eptinyco.tech,Neil,Montoya,SRE,SRE Engineer,TRUE
+e.p@eptinyco.tech,E,P,SRE,SRE Engineer,TRUE
+duck@eptinyco.tech,DuckDuck,Go,DUCK_ADMIN,Duck Duck Go Inspector,TRUE
