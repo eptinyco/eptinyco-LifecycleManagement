@@ -13,7 +13,8 @@ output "user_count" {
   value       = length(azuread_user.users)
 }
 
-output "app_assignment_count" {
-  description = "Total user-to-app assignments"
-  value       = length(azuread_app_role_assignment.user_app_assignments)
-}
+# output "app_assignment_count" {
+# description = "Total user-to-app assignments"
+# value       = length(azuread_app_role_assignment.user_app_assignments)
+# }
+
