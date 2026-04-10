@@ -13,8 +13,7 @@ resource "azuread_group_member" "dept_memberships" {
   for_each = local.users_by_upn
 
   group_object_id  = azuread_group.dept_groups[each.value.department].id
-  # member_object_id = azuread_user.users[each.key].id
-  member_object_id = azuread_user.users[each.value.upn].id
+  member_object_id = local.user_object_ids[each.key]
 
 }
 

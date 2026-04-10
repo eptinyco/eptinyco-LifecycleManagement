@@ -43,4 +43,11 @@ locals {
       ]
     ]) : pair.key => pair
   }
+
+  # Normalize user object IDs to bare UUIDs — the azuread provider can return
+  # full OData paths like /users/<uuid> depending on the provider version
+  user_object_ids = {
+    for upn, user in azuread_user.users :
+    upn => regex("[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", user.id)
+  }
 }
