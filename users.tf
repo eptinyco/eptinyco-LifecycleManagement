@@ -11,6 +11,7 @@ resource "azuread_user" "users" {
   display_name        = "${each.value.firstName} ${each.value.lastName}"
   department          = each.value.department
   job_title           = each.value.jobTitle
+  mail                = each.value.upn
 
   password              = random_password.initial[each.key].result
   force_password_change = true
