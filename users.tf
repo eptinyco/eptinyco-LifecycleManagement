@@ -14,7 +14,7 @@ resource "azuread_user" "users" {
 
   password              = random_password.initial[each.key].result
   force_password_change = true
-  account_enabled       = each.value.enabled
+  account_enabled       = lower(each.value.enabled)
 
   lifecycle {
     ignore_changes = [password]
