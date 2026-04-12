@@ -1,9 +1,11 @@
+# Generate a random password for the User 
 resource "random_password" "initial" {
   for_each = local.users_by_upn
   length   = 16
   special  = true
 }
 
+# Create / Update users in azuread 
 resource "azuread_user" "users" {
   for_each = local.users_by_upn
 
